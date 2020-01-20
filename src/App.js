@@ -12,6 +12,8 @@ import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 
+import axios from "axios";
+
 const BootstrapInput = withStyles(theme => ({
   root: {
     'label + &': {
@@ -64,7 +66,14 @@ export default class App extends Component {
 
   clickSubmit = event => {
     // now send email
-    console.log("yoho");
+    console.log("yoho molo");
+    axios.post("https://hiuzny8i0l.execute-api.us-west-2.amazonaws.com/prod/sendemail",
+    {
+      subject: "kk test 1",
+      body: "email body content..."
+    }).then(res =>
+      console.log(res)
+    ).catch(err => console.log(err));
   };
 
   render() {
