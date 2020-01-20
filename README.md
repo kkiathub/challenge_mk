@@ -1,21 +1,8 @@
-# Create React App example
+# Create React App using Material UI
 
 ## How to use
 
-Download the example [or clone the repo](https://github.com/mui-org/material-ui):
+## To run the static page.
 
-```sh
-curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2 material-ui-master/examples/create-react-app
-cd create-react-app
-```
+https://kkbuck-mk2.s3-us-west-2.amazonaws.com/index.html
 
-Install it and run:
-
-```sh
-npm install
-npm start
-```
-
-## The idea behind the example
-
-This example demonstrates how you can use [Create React App](https://github.com/facebookincubator/create-react-app).
